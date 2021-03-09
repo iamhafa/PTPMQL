@@ -1,0 +1,46 @@
+﻿@model IEnumerable<PTPMQL.Models.KhachHang>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Víp pờ rồ pờ lây ơ</h2>
+
+<p>
+    @Html.ActionLink("Thêm mới thông tin khách hàng", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            <label>Mã khách hàng</label>
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TenKhachHang)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DiaChi)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.KhachHangID)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.TenKhachHang)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.DiaChi)
+    </td>
+    <td>
+        @Html.ActionLink("Chỉnh sửa", "Edit", new { id = item.KhachHangID }) |
+        @Html.ActionLink("Chi tiết", "Details", new { id = item.KhachHangID }) |
+        @Html.ActionLink("Xóa", "Delete", new { id = item.KhachHangID })
+    </td>
+</tr>
+}
+
+</table>

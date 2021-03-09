@@ -1,0 +1,58 @@
+﻿@model IEnumerable<PTPMQL.Models.QuanLiChuyenBay>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>VietNamAirLines hân hạnh phục vụ quý khách</h2>
+
+<p>
+    @Html.ActionLink("Thêm mới thông tin chuyến bay", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DiemKhoiHanh)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DiemDen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ThoiGianBay)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChoNgoi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.DiemKhoiHanh)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DiemDen)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ThoiGianBay)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChoNgoi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Address)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.MaChuyenBay }) |
+            @Html.ActionLink("Details", "Details", new { id=item.MaChuyenBay }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MaChuyenBay })
+        </td>
+    </tr>
+}
+
+</table>
