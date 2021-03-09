@@ -11,7 +11,9 @@ namespace PTPMQL.Models
     public class QuanLiHangGui
     {
         [Key]
+        public string MaHangGui { get; set; }
         public string NgayGioGuiHang { get; set; }
-        public string CanNangHangGui { get; set; }
+        public string TrongLuongHangGui { get; set; }
+        public string XacNhanHopLe { get; set; }
     }
 }

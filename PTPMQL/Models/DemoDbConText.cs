@@ -15,6 +15,7 @@ namespace PTPMQL.Models
         public virtual DbSet<QuanLiChuyenBay> QuanLiChuyenBays { get; set; }
         public virtual DbSet<KhachHang> KhachHangs { get; set; }
         public virtual DbSet<NhanVien> NhanViens { get; set; }
+        public virtual DbSet<QuanLiHangGui> QuanLiHangGuis { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

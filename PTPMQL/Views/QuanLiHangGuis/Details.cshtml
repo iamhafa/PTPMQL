@@ -1,0 +1,43 @@
+﻿@model PTPMQL.Models.QuanLiHangGui
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>QuanLiHangGui</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NgayGioGuiHang)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayGioGuiHang)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TrongLuongHangGui)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TrongLuongHangGui)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.XacNhanHopLe)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.XacNhanHopLe)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MaHangGui }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
