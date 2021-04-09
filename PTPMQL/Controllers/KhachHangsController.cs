@@ -7,16 +7,16 @@ using PTPMQL.Models;
 
 namespace PTPMQL.Controllers
 {
-    public class AccountsController : Controller
+    public class KhachHangsController : Controller
     {
-        // GET: Account
-        public ActionResult Login()
+        // GET: KhachHangs
+        public ActionResult Index()
         {
             return View();
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Login(Account acc)
+        public ActionResult Index(KhachHang kh)
         {
             return View();
         }

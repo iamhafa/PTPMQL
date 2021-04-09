@@ -1,0 +1,11 @@
+﻿.udCenter {
+    margin: 0 auto;
+}
+
+.udWidth30 {
+    width: 30em;
+}
+
+.udMaxWidth30 {
+    max-width: 30em;
+}

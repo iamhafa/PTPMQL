@@ -6,9 +6,9 @@ using PTPMQL.Models;
 
 namespace PTPMQL.Models
 {
-    public class NhanVien : Person
+    public class Student : Person
     {
-        public string NhanVienID { get; set; }
-        public string CongTy { get; set; }
+        public string Address { get; set; }
+        public string University { get; set; }
     }
 }

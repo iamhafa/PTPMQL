@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/MyCSS")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
@@ -23,11 +24,11 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Tài khoản", "Index", "Accounts")</li>
-                    <li>@Html.ActionLink("Khách hàng", "Index", "KhachHang")</li>
-                    <li>@Html.ActionLink("QL Nhân viên Hàng Không", "Index", "NhanViens")</li>
-                    <li>@Html.ActionLink("Quản lí chuyến bay", "Index", "QuanLiChuyenBays")</li>
-                    <li>@Html.ActionLink("Quản lí Hàng kí gửi", "Index", "QuanLiHangGuis")</li>
+                    <li>@Html.ActionLink("Đăng Nhập", "Login", "Accounts")</li>
+                    <li>@Html.ActionLink("Khách hàng", "Index", "KhachHangs")</li>
+                    <li>@Html.ActionLink("Person", "Index", "Person")</li>
+                    <li>@Html.ActionLink("Student", "Index", "Students")</li>
+                    
                 </ul>
             </div>
         </div>

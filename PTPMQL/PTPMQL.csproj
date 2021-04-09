@@ -130,10 +130,11 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\KhachHangController.cs" />
-    <Compile Include="Controllers\NhanViensController.cs" />
+    <Compile Include="Controllers\KhachHangsController.cs" />
+    <Compile Include="Controllers\PersonController.cs" />
     <Compile Include="Controllers\QuanLiChuyenBaysController.cs" />
     <Compile Include="Controllers\QuanLiHangGuisController.cs" />
+    <Compile Include="Controllers\StudentsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -169,13 +170,27 @@
     <Compile Include="Migrations\202103090415503_Alter_Column_Table_QuanLiHangGui.Designer.cs">
       <DependentUpon>202103090415503_Alter_Column_Table_QuanLiHangGui.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202104060248402_Create_Table_Person.cs" />
+    <Compile Include="Migrations\202104060248402_Create_Table_Person.Designer.cs">
+      <DependentUpon>202104060248402_Create_Table_Person.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104060250543_Create_Table_Student.cs" />
+    <Compile Include="Migrations\202104060250543_Create_Table_Student.Designer.cs">
+      <DependentUpon>202104060250543_Create_Table_Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104060252106_Create_Table_NhanVien.cs" />
+    <Compile Include="Migrations\202104060252106_Create_Table_NhanVien.Designer.cs">
+      <DependentUpon>202104060252106_Create_Table_NhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\DemoDbConText.cs" />
     <Compile Include="Models\KhachHang.cs" />
     <Compile Include="Models\NhanVien.cs" />
+    <Compile Include="Models\Person.cs" />
     <Compile Include="Models\QuanLiChuyenBay.cs" />
     <Compile Include="Models\QuanLiHangGui.cs" />
+    <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -183,6 +198,8 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\MyStyle.css" />
+    <Content Include="Content\W3.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -214,28 +231,28 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Accounts\Create.cshtml" />
-    <Content Include="Views\Accounts\Delete.cshtml" />
-    <Content Include="Views\Accounts\Details.cshtml" />
-    <Content Include="Views\Accounts\Edit.cshtml" />
-    <Content Include="Views\Accounts\Index.cshtml" />
     <Content Include="Views\QuanLiChuyenBays\Create.cshtml" />
     <Content Include="Views\QuanLiChuyenBays\Delete.cshtml" />
     <Content Include="Views\QuanLiChuyenBays\Details.cshtml" />
     <Content Include="Views\QuanLiChuyenBays\Edit.cshtml" />
     <Content Include="Views\QuanLiChuyenBays\Index.cshtml" />
-    <Content Include="Views\KhachHang\Index.cshtml" />
-    <Content Include="Views\KhachHang\Create.cshtml" />
-    <Content Include="Views\NhanViens\Create.cshtml" />
-    <Content Include="Views\NhanViens\Delete.cshtml" />
-    <Content Include="Views\NhanViens\Details.cshtml" />
-    <Content Include="Views\NhanViens\Edit.cshtml" />
-    <Content Include="Views\NhanViens\Index.cshtml" />
     <Content Include="Views\QuanLiHangGuis\Create.cshtml" />
     <Content Include="Views\QuanLiHangGuis\Delete.cshtml" />
     <Content Include="Views\QuanLiHangGuis\Details.cshtml" />
     <Content Include="Views\QuanLiHangGuis\Edit.cshtml" />
     <Content Include="Views\QuanLiHangGuis\Index.cshtml" />
+    <Content Include="Views\Accounts\Login.cshtml" />
+    <Content Include="Views\KhachHangs\Index.cshtml" />
+    <Content Include="Views\Person\Create.cshtml" />
+    <Content Include="Views\Person\Delete.cshtml" />
+    <Content Include="Views\Person\Details.cshtml" />
+    <Content Include="Views\Person\Edit.cshtml" />
+    <Content Include="Views\Person\Index.cshtml" />
+    <Content Include="Views\Students\Create.cshtml" />
+    <Content Include="Views\Students\Delete.cshtml" />
+    <Content Include="Views\Students\Details.cshtml" />
+    <Content Include="Views\Students\Edit.cshtml" />
+    <Content Include="Views\Students\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -277,6 +294,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202103090415503_Alter_Column_Table_QuanLiHangGui.resx">
       <DependentUpon>202103090415503_Alter_Column_Table_QuanLiHangGui.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104060248402_Create_Table_Person.resx">
+      <DependentUpon>202104060248402_Create_Table_Person.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104060250543_Create_Table_Student.resx">
+      <DependentUpon>202104060250543_Create_Table_Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104060252106_Create_Table_NhanVien.resx">
+      <DependentUpon>202104060252106_Create_Table_NhanVien.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
