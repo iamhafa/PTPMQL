@@ -180,3 +180,6 @@ C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Alter_Column_Table_
 C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Create_Table_Person.resources
 C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Create_Table_Student.resources
 C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Create_Table_NhanVien.resources
+C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Create_Table_CheckAccount.resources
+C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.csprojAssemblyReference.cache
+C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Alter_Table_CheckAccount.resources
