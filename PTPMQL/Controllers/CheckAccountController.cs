@@ -6,7 +6,6 @@ namespace PTPMQL.Controllers
 {
     public class CheckAccountController : Controller
     {
-        
         public ViewResult Login(string returnUrl)
         {
             ViewBag.returnUrl = returnUrl;
@@ -36,7 +35,7 @@ namespace PTPMQL.Controllers
             FormsAuthentication.SignOut();
             return RedirectToAction("Index", "Home");
         }
-        //kiểm tra xem returnURL1 có thuộc hệ thống hay không
+        //kiểm tra xem returnUrl có thuộc hệ thống hay không
         private ActionResult RedirectToLocal(string returnUrl)
         {
             if (Url.IsLocalUrl(returnUrl))
