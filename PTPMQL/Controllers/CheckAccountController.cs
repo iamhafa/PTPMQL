@@ -25,6 +25,10 @@ namespace PTPMQL.Controllers
                     FormsAuthentication.SetAuthCookie(checkacc.CheckPassword, true);
                     return RedirectToLocal(returnUrl);
                 }
+                else
+                {
+                    ModelState.AddModelError("", "Thông tin đăng nhập không chính xác");
+                }
             }
             return View(checkacc);
         }

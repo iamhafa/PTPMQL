@@ -10,15 +10,21 @@
 namespace PTPMQL.Models
 {
     using System;
-    using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-
-    public partial class Account
+    using System.Data.Entity;
+    using System.Data.Entity.Infrastructure;
+    
+    public partial class LTQLDbEntities : DbContext
     {
-        [Required(ErrorMessage = "UserName không được để trống")]
-        public string UserName { get; set; }
-        [Required(ErrorMessage = "PassWord không được để trống")]
-        [DataType(DataType.Password)]
-        public string Password { get; set; }
+        public LTQLDbEntities()
+            : base("name=LTQLDbEntities")
+        {
+        }
+    
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            throw new UnintentionalCodeFirstException();
+        }
+    
+        public virtual DbSet<Account> Accounts { get; set; }
     }
 }

@@ -168,11 +168,6 @@ C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Create_Table_Accoun
 C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Create_Table_QuanLiChuyenBay.resources
 C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Add_Column_QLCB_Address.resources
 C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Create_Table_KhachHang.resources
-C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.csproj.GenerateResource.cache
-C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.csproj.CoreCompileInputs.cache
-C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.csproj.CopyComplete
-C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.dll
-C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.pdb
 C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Add_Column_Account_QueQuan.resources
 C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Add_Column_NhanVien.resources
 C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Create_Table_QuanLiHangGui.resources
@@ -181,5 +176,9 @@ C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Create_Table_Person
 C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Create_Table_Student.resources
 C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Create_Table_NhanVien.resources
 C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Create_Table_CheckAccount.resources
-C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.csprojAssemblyReference.cache
 C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Alter_Table_CheckAccount.resources
+C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.csproj.GenerateResource.cache
+C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.csproj.CoreCompileInputs.cache
+C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.csproj.CopyComplete
+C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.dll
+C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.pdb
