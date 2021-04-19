@@ -7,6 +7,7 @@
     @Styles.Render("~/Content/css")
     @Styles.Render("~/Content/MyCSS")
     @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/ckeditor")
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -21,14 +22,11 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Articles", "Index", "Articles")</li>
                     <li>@Html.ActionLink("Register", "Register", "RegisterAccount")</li>
                     <li>@Html.ActionLink("RegisterLogin", "Login", "RegisterAccount")</li>
                     <li>@Html.ActionLink("Đăng Nhập", "Login", "Accounts")</li>
                     <li>@Html.ActionLink("Khách hàng", "Index", "KhachHangs")</li>
-                    <li>@Html.ActionLink("Person", "Index", "Person")</li>
-                    <li>@Html.ActionLink("Student", "Index", "Students")</li>
                     <li>@Html.ActionLink("CheckAccount", "Login", "CheckAccount")</li>
 
                 </ul>

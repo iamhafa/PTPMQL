@@ -182,3 +182,4 @@ C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.csproj.CoreCompileInputs.cache
 C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.csproj.CopyComplete
 C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.dll
 C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.pdb
+C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.csprojAssemblyReference.cache
