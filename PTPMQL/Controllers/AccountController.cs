@@ -8,7 +8,7 @@ using PTPMQL.Models;
 
 namespace PTPMQL.Controllers
 {
-    public class RegisterAccountController : Controller
+    public class AccountController : Controller
     {
         Encrytion encry = new Encrytion();
         LTQLDbEntities db = new LTQLDbEntities();

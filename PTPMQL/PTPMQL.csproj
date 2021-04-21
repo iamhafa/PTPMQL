@@ -128,6 +128,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AccountsController.cs" />
     <Compile Include="Controllers\ArticlesController.cs" />
     <Compile Include="Controllers\CheckAccountController.cs" />
@@ -136,7 +137,6 @@
     <Compile Include="Controllers\PersonController.cs" />
     <Compile Include="Controllers\QuanLiChuyenBaysController.cs" />
     <Compile Include="Controllers\QuanLiHangGuisController.cs" />
-    <Compile Include="Controllers\RegisterAccountController.cs" />
     <Compile Include="Controllers\StudentsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -192,6 +192,10 @@
     <Compile Include="Migrations\202104100721459_Alter_Table_CheckAccount.cs" />
     <Compile Include="Migrations\202104100721459_Alter_Table_CheckAccount.Designer.cs">
       <DependentUpon>202104100721459_Alter_Table_CheckAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104211626362_Alter_Table_CheckAccount1.cs" />
+    <Compile Include="Migrations\202104211626362_Alter_Table_CheckAccount1.Designer.cs">
+      <DependentUpon>202104211626362_Alter_Table_CheckAccount1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs">
@@ -274,13 +278,6 @@
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <EntityDeploy Include="Models\Model1.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\Model1.edmx.diagram">
-      <DependentUpon>Model1.edmx</DependentUpon>
-    </Content>
     <Content Include="Scripts\ckeditor\adapters\jquery.js" />
     <Content Include="Scripts\ckeditor\CHANGES.html" />
     <Content Include="Scripts\ckeditor\ckeditor.asp" />
@@ -292,6 +289,13 @@
     </EntityDeploy>
     <Content Include="Models\Model2.edmx.diagram">
       <DependentUpon>Model2.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\ckeditor\ckeditor.php" />
@@ -683,14 +687,14 @@
     <Content Include="Views\Students\Details.cshtml" />
     <Content Include="Views\Students\Edit.cshtml" />
     <Content Include="Views\Students\Index.cshtml" />
-    <Content Include="Views\CheckAccount\Login.cshtml" />
-    <Content Include="Views\RegisterAccount\Register.cshtml" />
-    <Content Include="Views\RegisterAccount\Login.cshtml" />
     <Content Include="Views\Articles\Create.cshtml" />
     <Content Include="Views\Articles\Delete.cshtml" />
     <Content Include="Views\Articles\Details.cshtml" />
     <Content Include="Views\Articles\Edit.cshtml" />
     <Content Include="Views\Articles\Index.cshtml" />
+    <Content Include="Views\CheckAccount\Login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -747,6 +751,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202104100721459_Alter_Table_CheckAccount.resx">
       <DependentUpon>202104100721459_Alter_Table_CheckAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104211626362_Alter_Table_CheckAccount1.resx">
+      <DependentUpon>202104211626362_Alter_Table_CheckAccount1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -7,7 +7,7 @@
     <Property Name="UserName" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
   </EntityType>
-  <EntityContainer Name="LTQLDbEntities" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="LTQLDbEntities1" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Accounts" EntityType="Self.Account" />
   </EntityContainer>
 </Schema>

@@ -9,8 +9,6 @@
 
 namespace PTPMQL.Models
 {
-    using System;
-    using System.Collections.Generic;
     using System.Web.Mvc;
 
     public partial class Article

@@ -10,7 +10,7 @@
             <PropertyRef Name="UserName" />
           </Key>
           <Property Name="UserName" Type="nvarchar" MaxLength="128" Nullable="false" />
-          <Property Name="Password" Type="nvarchar(max)" />
+          <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
         </EntityType>
         <EntityContainer Name="LTQLDbModelStoreContainer">
           <EntitySet Name="Accounts" EntityType="Self.Accounts" Schema="dbo" store:Type="Tables" />
@@ -25,7 +25,7 @@
             <PropertyRef Name="UserName" />
           </Key>
           <Property Name="UserName" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
         </EntityType>
         <EntityContainer Name="LTQLDbEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Accounts" EntityType="Self.Account" />

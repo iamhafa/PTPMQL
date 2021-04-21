@@ -20,7 +20,7 @@ namespace PTPMQL.Controllers
             //nếu vượt qua được validation ở checkaccount
             if (ModelState.IsValid)
             {
-                if (checkacc.CheckUserName == "iamhafa" && checkacc.CheckPassword == "nothing")
+                if (checkacc.CheckUserName == "admin" && checkacc.CheckPassword == "123123")
                 {
                     FormsAuthentication.SetAuthCookie(checkacc.CheckPassword, true);
                     return RedirectToLocal(returnUrl);

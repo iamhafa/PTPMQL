@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="3337e99ceb244ae8a5f25cf951540357" Name="Diagram1">
+      <Diagram DiagramId="2a669346a4164d17bdf8f575ebd8773b" Name="Diagram1">
         <EntityTypeShape EntityType="LTQLDbModel.Account" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
