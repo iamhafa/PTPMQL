@@ -13,7 +13,7 @@ namespace PTPMQL.Controllers
     public class MeetingsController : Controller
     {
         private DemoDbConText db = new DemoDbConText();
-
+        [Authorize]
         // GET: Meetings
         public ActionResult Index()
         {
@@ -36,6 +36,7 @@ namespace PTPMQL.Controllers
         }
 
         // GET: Meetings/Create
+        [Authorize]
         public ActionResult Create()
         {
             return View();
@@ -58,7 +59,7 @@ namespace PTPMQL.Controllers
             return View(meeting);
         }
 
-        // GET: Meetings/Edit/5
+        [Authorize]
         public ActionResult Edit(string id)
         {
             if (id == null)
@@ -78,6 +79,7 @@ namespace PTPMQL.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public ActionResult Edit([Bind(Include = "IDNhanVien,ChuDeHop,MaChuyenBay,DateTime,NoiDungHop")] Meeting meeting)
         {
             if (ModelState.IsValid)
@@ -88,7 +90,7 @@ namespace PTPMQL.Controllers
             }
             return View(meeting);
         }
-
+        [Authorize]
         // GET: Meetings/Delete/5
         public ActionResult Delete(string id)
         {
@@ -103,7 +105,7 @@ namespace PTPMQL.Controllers
             }
             return View(meeting);
         }
-
+        [Authorize]
         // POST: Meetings/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]

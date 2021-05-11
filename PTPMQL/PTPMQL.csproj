@@ -206,30 +206,17 @@
     <Compile Include="Migrations\202105090934372_Alter_Table_QuanLiChuyenBay.Designer.cs">
       <DependentUpon>202105090934372_Alter_Table_QuanLiChuyenBay.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\Account.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+    <Compile Include="Migrations\202105110300482_Create_Table_Account1.cs" />
+    <Compile Include="Migrations\202105110300482_Create_Table_Account1.Designer.cs">
+      <DependentUpon>202105110300482_Create_Table_Account1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Account.cs" />
     <Compile Include="Models\CheckAccount.cs" />
     <Compile Include="Models\DemoDbConText.cs" />
     <Compile Include="Models\Encrytion.cs" />
     <Compile Include="Models\Meeting.cs" />
     <Compile Include="Models\Passenger.cs" />
-    <Compile Include="Models\Model1.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Model1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Model1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.edmx</DependentUpon>
-    </Compile>
     <Compile Include="Models\QuanLiChuyenBay.cs" />
     <Compile Include="Models\QuanLiHangGui.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -249,16 +236,6 @@
     <Content Include="Images\logo_vna.png" />
     <Content Include="Images\plane_icon.png" />
     <Content Include="Images\QRCode_vna.png" />
-    <Content Include="Models\Model1.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\Model1.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.cs</LastGenOutput>
-    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\ckeditor\adapters\jquery.js" />
@@ -266,13 +243,6 @@
     <Content Include="Scripts\ckeditor\ckeditor.asp" />
     <Content Include="Scripts\ckeditor\ckeditor.js" />
     <Content Include="Scripts\ckeditor\ckeditor.pack" />
-    <EntityDeploy Include="Models\Model1.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\Model1.edmx.diagram">
-      <DependentUpon>Model1.edmx</DependentUpon>
-    </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\ckeditor\ckeditor.php" />
     <Content Include="Scripts\ckeditor\ckeditor_basic.js" />
@@ -732,6 +702,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202105090934372_Alter_Table_QuanLiChuyenBay.resx">
       <DependentUpon>202105090934372_Alter_Table_QuanLiChuyenBay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105110300482_Create_Table_Account1.resx">
+      <DependentUpon>202105110300482_Create_Table_Account1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

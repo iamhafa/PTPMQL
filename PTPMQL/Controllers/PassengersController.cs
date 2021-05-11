@@ -12,14 +12,15 @@ namespace PTPMQL.Controllers
 {
     public class PassengersController : Controller
     {
+        
         private DemoDbConText db = new DemoDbConText();
-
+        [Authorize]
         // GET: Passengers
         public ActionResult Index()
         {
             return View(db.Passengers.ToList());
         }
-
+        
         // GET: Passengers/Details/5
         public ActionResult Details(string id)
         {

@@ -181,9 +181,9 @@ C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.dll
 C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.pdb
 C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Save_Data.resources
 C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Create_Table_Passenger.resources
-C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.csprojAssemblyReference.cache
 C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Alter_Table_Passenger.resources
 C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Create_Table_Meeting.resources
 C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Alter_Table_Meeting.resources
 C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Add_Column_Meeting.resources
 C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Alter_Table_QuanLiChuyenBay.resources
+C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Create_Table_Account1.resources

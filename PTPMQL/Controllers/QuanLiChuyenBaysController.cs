@@ -12,14 +12,14 @@ namespace PTPMQL.Controllers
 {
     public class QuanLiChuyenBaysController : Controller
     {
+        
         private DemoDbConText db = new DemoDbConText();
-
-        // GET: QuanLiChuyenBays
+        [Authorize]
         public ActionResult Index()
         {
             return View(db.QuanLiChuyenBays.ToList());
         }
-
+        [Authorize]
         // GET: QuanLiChuyenBays/Details/5
         public ActionResult Details(string id)
         {
@@ -34,7 +34,7 @@ namespace PTPMQL.Controllers
             }
             return View(quanLiChuyenBay);
         }
-
+        [Authorize]
         // GET: QuanLiChuyenBays/Create
         public ActionResult Create()
         {
@@ -57,7 +57,7 @@ namespace PTPMQL.Controllers
 
             return View(quanLiChuyenBay);
         }
-
+        [Authorize]
         // GET: QuanLiChuyenBays/Edit/5
         public ActionResult Edit(string id)
         {
@@ -78,6 +78,7 @@ namespace PTPMQL.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public ActionResult Edit([Bind(Include = "MaChuyenBay,SoHanhKhach,DiemKhoiHanh,DiemDen,ThoiGianXuatPhat")] QuanLiChuyenBay quanLiChuyenBay)
         {
             if (ModelState.IsValid)
@@ -88,7 +89,7 @@ namespace PTPMQL.Controllers
             }
             return View(quanLiChuyenBay);
         }
-
+        [Authorize]
         // GET: QuanLiChuyenBays/Delete/5
         public ActionResult Delete(string id)
         {
@@ -107,6 +108,7 @@ namespace PTPMQL.Controllers
         // POST: QuanLiChuyenBays/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public ActionResult DeleteConfirmed(string id)
         {
             QuanLiChuyenBay quanLiChuyenBay = db.QuanLiChuyenBays.Find(id);

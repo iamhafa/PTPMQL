@@ -11,7 +11,7 @@ namespace PTPMQL.Controllers
     public class AccountController : Controller
     {
         Encrytion encry = new Encrytion();
-        LTQLDbEntities db = new LTQLDbEntities();
+        DemoDbConText db = new DemoDbConText();
         // GET: Account
         [HttpGet]
         public ActionResult Register()
@@ -63,7 +63,7 @@ namespace PTPMQL.Controllers
             }
             return View(acc);
         }
-        public ActionResult Logout()
+        public ActionResult Logoff()
         {
             FormsAuthentication.SignOut();
             return RedirectToAction("Index", "Home");

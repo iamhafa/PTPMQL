@@ -5,31 +5,37 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Details</h2>
-
-<div>
-    <h4>Passenger</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.GioiTinh)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.GioiTinh)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.HoChieu)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.HoChieu)
-        </dd>
-
-    </dl>
+<div class="w3-animate-opacity w3-margin-top">
+    <img src="~/Images/logo_vna.png" class="" style="width:20%" />
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.HovaTen }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+<div>
+    <hr />
+    <dl class="udCenter">
+        <div class="w3-container">
+
+            <dd class="w3-card-4 w3-border w3-light-blue w3-display-middle"  style="width:30%">
+
+                <div class="w3-container w3-center">
+                    <h3>Thông tin hành khách</h3>
+                    <img src="~/Images/img_avatar.png" alt="Avatar" style="width:50%">
+                    <p class="w3-margin-top">
+                        Tên: @Html.DisplayFor(model => model.HovaTen)
+                    </p>
+                    <p>
+                        Giới tính: @Html.DisplayFor(model => model.GioiTinh)
+                    </p>
+                    <p>
+                        Hộ chiếu: @Html.DisplayFor(model => model.HoChieu)
+                    </p>
+                    <div class="w3-section">
+                        <button class="w3-button w3-green w3-round">Accept</button>
+                        <button class="w3-button w3-red w3-round">Decline</button>
+                    </div>
+                </div>
+            </dd>
+        </div>
+</dl>
+</div>
+@Html.ActionLink("Trở về", "Index")
+
+

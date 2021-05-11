@@ -13,7 +13,7 @@ namespace PTPMQL.Controllers
     public class QuanLiHangGuisController : Controller
     {
         private DemoDbConText db = new DemoDbConText();
-
+        [Authorize]
         // GET: QuanLiHangGuis
         public ActionResult Index()
         {
