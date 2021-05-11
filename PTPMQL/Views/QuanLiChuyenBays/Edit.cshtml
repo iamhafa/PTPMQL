@@ -5,19 +5,39 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Chỉnh sửa</h2>
+        <img src="~/Images/logo_vna.png" class="" style="width:20%" />
+
+<div class="w3-container w3-center">
+    <h2 class="w3-text-cyan w3-sans-serif"> Chỉnh sửa thông tin chuyến bay</h2>
+    <h3 class="w3-opacity w3-text-orange w3-cursive">Hãng hàng không Vietnam AirLines</h3>
+</div>
+
 
 
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
+    <h3 class="w3-text-deep-orange w3-serif">Vui lòng chỉ chỉnh sửa khi cần thiết</h3>
     <div class="form-horizontal">
-        <h4>QuanLiChuyenBay</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         @Html.HiddenFor(model => model.MaChuyenBay)
 
+        <div class="form-group">
+            @Html.LabelFor(model => model.MaChuyenBay, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.MaChuyenBay, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.MaChuyenBay, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.SoHanhKhach, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.SoHanhKhach, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.SoHanhKhach, "", new { @class = "text-danger" })
+            </div>
+        </div>
         <div class="form-group">
             @Html.LabelFor(model => model.DiemKhoiHanh, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
@@ -25,7 +45,6 @@
                 @Html.ValidationMessageFor(model => model.DiemKhoiHanh, "", new { @class = "text-danger" })
             </div>
         </div>
-
         <div class="form-group">
             @Html.LabelFor(model => model.DiemDen, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
@@ -33,34 +52,19 @@
                 @Html.ValidationMessageFor(model => model.DiemDen, "", new { @class = "text-danger" })
             </div>
         </div>
-
         <div class="form-group">
-            @Html.LabelFor(model => model.ThoiGianBay, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.ThoiGianXuatPhat, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.ThoiGianBay, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.ThoiGianBay, "", new { @class = "text-danger" })
+                @Html.EditorFor(model => model.ThoiGianXuatPhat, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ThoiGianXuatPhat, "", new { @class = "text-danger" })
             </div>
         </div>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.ChoNgoi, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.ChoNgoi, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.ChoNgoi, "", new { @class = "text-danger" })
-            </div>
-        </div>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.Address, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Address, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Address, "", new { @class = "text-danger" })
-            </div>
-        </div>
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Save" class="btn btn-default" />
+                <input type="submit" value="Lưu" class="btn btn-default" />
             </div>
         </div>
     </div>

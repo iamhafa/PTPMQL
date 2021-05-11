@@ -1,0 +1,47 @@
+﻿@model PTPMQL.Models.Meeting
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="w3-monospace w3-text-purple">Nội dung chi tiết cuộc họp của Tổ bay</h2>
+
+<div>
+   
+    <hr />
+    <dl class="dl-horizontal">
+        
+
+        <dd>
+            Mã nhân viên: @Html.DisplayFor(model => model.IDNhanVien)
+        </dd>
+       
+
+        <dd>
+            Chủ đề cuộc họp: @Html.DisplayFor(model => model.ChuDeHop)
+        </dd>
+
+        
+
+        <dd>
+            Mã chuyến bay: @Html.DisplayFor(model => model.MaChuyenBay)
+        </dd>
+
+        
+
+        <dd>
+            Ngày giờ: @Html.DisplayFor(model => model.DateTime)
+        </dd>
+
+        
+
+        <dd>
+            Nội dung: @Html.DisplayFor(model => model.NoiDungHop)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Trở về", "Index")
+</p>

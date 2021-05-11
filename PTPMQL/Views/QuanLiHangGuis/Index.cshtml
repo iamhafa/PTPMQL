@@ -5,42 +5,58 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<div class="w3-animate-opacity w3-margin-top">
+    <img src="~/Images/logo_vna.png" class="" style="width:20%" />
+</div>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.NgayGioGuiHang)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TrongLuongHangGui)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.XacNhanHopLe)
-        </th>
-        <th></th>
-    </tr>
+<div class="w3-container w3-center">
+    <h2 class="w3-text-cyan w3-cursive w3-xxxlarge">Hãng hàng không Vietnam AirLines</h2>
+        <h3 class="w3-text-orange w3-sans-serif">SẢI CÁNH VƯƠN CAO</h3>
+            <h4 class="w3-monospace w3-container">Quản lí hàng gửi</h4>
+</div>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.NgayGioGuiHang)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TrongLuongHangGui)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.XacNhanHopLe)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.MaHangGui }) |
-            @Html.ActionLink("Details", "Details", new { id=item.MaHangGui }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.MaHangGui })
-        </td>
-    </tr>
-}
 
+
+    <div class="w3-btn w3-round w3-border w3-text-light-blue">
+        @Html.ActionLink("Add informations", "Create")
+    </div>
+
+<table class="w3-table w3-bordered w3-light-gray w3-margin-top">
+        <tbody>
+            <tr class="w3-black">
+                <th class="w3-center">Mã hàng gửi</th>
+                <th class="w3-center">Thời gian gửi hàng</th>
+                <th class="w3-center">Trọng lượng</th>
+                <th class="w3-center">Xác nhận hợp lệ</th>
+                <th class="w3-center">Tùy chỉnh</th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td class="w3-center">
+                        @Html.DisplayFor(modelItem => item.MaHangGui)
+                    </td>
+                    <td class="w3-center">
+                        @Html.DisplayFor(modelItem => item.NgayGioGuiHang)
+                    </td>
+                    <td class="w3-center">
+                        @Html.DisplayFor(modelItem => item.TrongLuongHangGui)
+                    </td>
+                    <td class="w3-center">
+                        @Html.DisplayFor(modelItem => item.XacNhanHopLe)
+                    </td>
+                    <td class="w3-center">
+                        <div class="w3-btn w3-round-small w3-border">
+                            @Html.ActionLink("Edit", "Edit", new { id = item.MaHangGui })
+                        </div>
+                        <div class="w3-btn w3-round-small w3-border">
+                            @Html.ActionLink("Details", "Details", new { id = item.MaHangGui })
+                        </div>
+                        <div class="w3-btn w3-round-small w3-border">
+                            @Html.ActionLink("Delete", "Delete", new { id = item.MaHangGui })
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
 </table>

@@ -13,16 +13,13 @@ namespace PTPMQL.Models
         }
         public virtual DbSet<Account> Accounts { get; set; }
         public virtual DbSet<QuanLiChuyenBay> QuanLiChuyenBays { get; set; }
-        public virtual DbSet<KhachHang> KhachHangs { get; set; }
         public virtual DbSet<QuanLiHangGui> QuanLiHangGuis { get; set; }
-        public virtual DbSet<Person> Persons { get; set; }
+        public virtual DbSet<Passenger> Passengers { get; set; }
         public virtual DbSet<CheckAccount> CheckAccounts { get; set; }
+        public virtual DbSet<Meeting> Meetings { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
         }
-
-        public System.Data.Entity.DbSet<PTPMQL.Models.Student> Students { get; set; }
-
     }
 }

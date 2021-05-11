@@ -18,29 +18,23 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("iamhafa", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Articles", "Index", "Articles")</li>
-                    <li>@Html.ActionLink("FormĐăngNhập", "Login", "Accounts")</li>
-                    <li>@Html.ActionLink("Khách hàng", "Index", "KhachHangs")</li>
-                    <li>@Html.ActionLink("Kiểm tra đăng nhập", "Login", "CheckAccount")</li>
                     <li>@Html.ActionLink("Đăng ký", "Register", "Account")</li>
                     <li>@Html.ActionLink("Đăng nhập", "Login", "Account")</li>
-
-
-
+                    <li>@Html.ActionLink("Cuộc họp", "Index", "Meetings")</li>
+                    <li>@Html.ActionLink("Truy cập hệ thống", "Login", "CheckAccount")</li>
+                    <li>@Html.ActionLink("Hành Khách", "Index", "Passengers")</li>
+                    <li>@Html.ActionLink("Quản lí Chuyến bay", "Index", "QuanLiChuyenBays")</li>
+                    <li>@Html.ActionLink("Quản lí Hàng gửi", "Index", "QuanLiHangGuis")</li>
                 </ul>
             </div>
         </div>
     </div>
     <div class="container body-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")

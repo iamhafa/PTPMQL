@@ -1,0 +1,62 @@
+﻿@model PTPMQL.Models.Meeting
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h3 class="w3-text-red">Bạn có chắc rằng muốn xóa dữ liệu này?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IDNhanVien)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IDNhanVien)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ChuDeHop)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChuDeHop)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaChuyenBay)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaChuyenBay)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NoiDungHop)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NoiDungHop)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Có" class="btn btn-default" /> |
+            @Html.ActionLink("Không", "Index")
+        </div>
+    }
+</div>

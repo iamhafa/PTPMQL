@@ -5,39 +5,36 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Details</h2>
+        <img src="~/Images/logo_vna.png" class="" style="width:20%" />
+
+<div class="w3-container w3-center">
+    <h2 class="w3-text-cyan w3-sans-serif">Thông tin chi tiết chuyến bay</h2>
+    <h3 class="w3-opacity w3-text-orange w3-cursive">Hãng hàng không Vietnam AirLines</h3>
+</div>
 
 <div>
-    <h4>QuanLiHangGui</h4>
+    
     <hr />
     <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.NgayGioGuiHang)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.NgayGioGuiHang)
+        <dd class="w3-large">
+            Mã hàng gửi: @Html.DisplayFor(model => model.MaHangGui)
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.TrongLuongHangGui)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TrongLuongHangGui)
+        <dd class="w3-large">
+            Ngày giờ gửi hàng: @Html.DisplayFor(model => model.NgayGioGuiHang)
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.XacNhanHopLe)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.XacNhanHopLe)
+        <dd class="w3-large">
+            Trọng lượng hàng gửi: @Html.DisplayFor(model => model.TrongLuongHangGui)
         </dd>
+
+        <dd class="w3-large">
+            Xác nhận hợp lệ: @Html.DisplayFor(model => model.XacNhanHopLe)
+        </dd>
+
 
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.MaHangGui }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Trở về", "Index")
 </p>

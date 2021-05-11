@@ -4,43 +4,59 @@
     ViewBag.Title = "Login";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<div class="w3-animate-opacity w3-margin-top">
+    <img src="~/Images/logo_vna.png" class="" style="width:20%" />
+</div>
 
-<h2>Đăng nhập GAME</h2>
-
-
-@using (Html.BeginForm()) 
+@using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
-    <div class="form-horizontal">
-        <h4>Điền tài khoản và mật khẩu xuống phía dưới</h4>
-        <hr />
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        <div class="form-group">
-            @Html.LabelFor(model => model.UserName, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.UserName, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+
+<div class="w3-round udCenter udWidth30 w3-animate-top">
+    <div>
+        <div class="w3-container">
+
+            <div class="w3-card-4 w3-margin-top">
+                <header class="w3-amber w3-text-black w3-center w3-container w3-round">
+                    <h1>Đăng nhập tài khoản Airlines</h1>
+                </header>
+
+                <div class="w3-container">
+                    <div class="w3-row w3-margin-top ">
+                        <label>UserName</label>
+                        <input type="text" name="UserName" class="w3-input w3-border w3-round-large udMaxWidth30" placeholder="Tên tài khoản" required" />
+                    </div>
+                    <div>
+                        @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="w3-row w3-margin-top">
+                        <label>PassWord</label>
+                        <input type="password" name="PassWord" class="w3-input w3-border w3-round-large udMaxWidth30" placeholder="Mật khẩu" required" />
+                    </div>
+                    <div>
+                        @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                    </div>
+                    <div>
+                        <input class="w3-check" type="checkbox" checked="checked">
+                        <label>Remember me~~</label>
+                    </div>
+                    <footer class="w3-padding w3-border-light-gray w3-margin-bottom w3-margin-top">
+                        <input type="submit" value="Login" class="w3-btn w3-white w3-border w3-border-blue-gray w3-round w3-card" />
+                    </footer>
+
+                </div>
+
             </div>
+
         </div>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Login" class="btn btn-default" />
-            </div>
-        </div>
     </div>
+
+</div>
+<p class=" w3-container w3-display-bottomleft">
+    <img src="~/Images/QRCode_vna.png" alt="QRCode" style="width:40%" />
+</p>     
 }
-
-
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
+    @section Scripts {
+         @Scripts.Render("~/bundles/jqueryval")
 }

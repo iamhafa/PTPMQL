@@ -5,55 +5,50 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Details</h2>
+        <img src="~/Images/logo_vna.png" class="" style="width:20%" />
+
+<div class="w3-container w3-center">
+    <h2 class="w3-text-cyan w3-sans-serif">Thông tin chi tiết chuyến bay</h2>
+    <h3 class="w3-opacity w3-text-orange w3-cursive">Hãng hàng không Vietnam AirLines</h3>
+</div>
+
 
 <div>
-    <h4>QuanLiChuyenBay</h4>
+    
     <hr />
     <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.DiemKhoiHanh)
-        </dt>
+        
+            <dd class="w3-large">
+                Mã chuyến bay: @Html.DisplayFor(model => model.MaChuyenBay)
+            </dd>
+            
+            <dd class="w3-large">
+                Số hành khách: @Html.DisplayFor(model => model.SoHanhKhach) người
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.DiemKhoiHanh)
-        </dd>
+            <dd class="w3-large">
+                Điểm khởi hành: @Html.DisplayFor(model => model.DiemKhoiHanh)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.DiemDen)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.DiemDen)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.ThoiGianBay)
-        </dt>
+            <dd class="w3-large">
+                Điểm đến: @Html.DisplayFor(model => model.DiemDen)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.ThoiGianBay)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.ChoNgoi)
-        </dt>
+            <dd class="w3-large">
+                Thời gian xuất phát @Html.DisplayFor(model => model.ThoiGianXuatPhat)h
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.ChoNgoi)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Address)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Address)
-        </dd>
+        </dl>
 
-    </dl>
+        
+
+    
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.MaChuyenBay }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Trở về", "Index")
 </p>

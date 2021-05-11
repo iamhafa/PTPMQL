@@ -1,0 +1,46 @@
+﻿@model IEnumerable<PTPMQL.Models.Passenger>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="w3-animate-opacity w3-margin-top">
+    <img src="~/Images/logo_vna.png" class="" style="width:20%" />
+</div>
+
+<div class="w3-margin-top w3-btn w3-round w3-border w3-text-light-blue">
+    @Html.ActionLink("Add informations", "Create")
+</div>
+@foreach (var item in Model)
+{
+    <div class="w3-container">
+    
+        <div class="w3-card-4 w3-border w3-light-blue w3-display-middle" style="width:30%">
+
+            <div class="w3-container w3-center">
+                <h3>Thông tin hành khách</h3>
+                <img src="~/Images/img_avatar.png" alt="Avatar" style="width:50%">
+                <p class="w3-margin-top">
+                    Tên: @Html.DisplayFor(model => item.HovaTen)
+                </p>
+                <p>
+                    Giới tính: @Html.DisplayFor(model => item.GioiTinh)
+                </p>
+                <p>
+                   Hộ chiếu: @Html.DisplayFor(model => item.HoChieu)
+                </p>
+                <div class="w3-section">
+                    <button class="w3-button w3-green w3-round">Accept</button>
+                    <button class="w3-button w3-red w3-round">Decline</button>
+                </div>
+                <div class="w3-section">
+                        @Html.ActionLink("Edit", "Edit", new { id = item.HoChieu }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.HoChieu }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.HoChieu })
+                </div>
+            </div>
+
+        </div>
+    </div>
+}

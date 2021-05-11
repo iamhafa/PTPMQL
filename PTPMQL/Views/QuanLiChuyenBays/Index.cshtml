@@ -5,54 +5,65 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>VietNamAirLines hân hạnh phục vụ quý khách</h2>
+<div class="w3-animate-opacity w3-margin-top">
+    <img src="~/Images/logo_vna.png" class="" style="width:20%" />
+</div>
+    
+    <div class="w3-container w3-center">
+        <h2 class="w3-text-cyan w3-cursive w3-xxxlarge">Hãng hàng không Vietnam AirLines</h2>
+            <h3 class="w3-text-orange w3-sans-serif">SẢI CÁNH VƯƠN CAO</h3>
+                <h4 class="w3-monospace w3-container">Quản lí chuyến bay</h4>
+    </div>
+    
 
-<p>
-    @Html.ActionLink("Thêm mới thông tin chuyến bay", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.DiemKhoiHanh)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.DiemDen)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ThoiGianBay)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ChoNgoi)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Address)
-        </th>
-        <th></th>
-    </tr>
 
-@foreach (var item in Model) {
+    <div class="w3-btn w3-round w3-border w3-text-light-blue">
+        @Html.ActionLink("Add informations", "Create")
+    </div>
+
+<table class="w3-table w3-bordered w3-light-gray w3-margin-top">
+    <tbody>
+        <tr class="w3-black">
+            <th class="w3-center">Mã chuyến bay</th>
+            <th class="w3-center">Số hành khách</th>
+            <th class="w3-center">Điểm khởi hành</th>
+            <th class="w3-center">Điểm đến</th>
+            <th class="w3-center">Thời gian xuất phát</th>
+            <th class="w3-center">Tùy chỉnh</th>
+        </tr>
+        @foreach (var item in Model)
+        {
     <tr>
-        <td>
+        <th class="w3-center">
+            @Html.DisplayFor(modelItem => item.MaChuyenBay)
+        </th>
+
+        <td class="w3-center">
+            @Html.DisplayFor(modelItem => item.SoHanhKhach) người
+        </td>
+
+        <td class="w3-center">
             @Html.DisplayFor(modelItem => item.DiemKhoiHanh)
         </td>
-        <td>
+        <td class="w3-center">
             @Html.DisplayFor(modelItem => item.DiemDen)
         </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ThoiGianBay)
+
+        <td class="w3-center">
+            @Html.DisplayFor(modelItem => item.ThoiGianXuatPhat)h
         </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ChoNgoi)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Address)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.MaChuyenBay }) |
-            @Html.ActionLink("Details", "Details", new { id=item.MaChuyenBay }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.MaChuyenBay })
+        <td class="w3-center">
+            <div class="w3-btn w3-round-small w3-border">
+                @Html.ActionLink("Edit", "Edit", new { id = item.MaChuyenBay })
+            </div>
+            <div class="w3-btn w3-round-small w3-border">
+                @Html.ActionLink("Details", "Details", new { id = item.MaChuyenBay })
+            </div>
+            <div class="w3-btn w3-round-small w3-border">
+                @Html.ActionLink("Delete", "Delete", new { id = item.MaChuyenBay })
+            </div>
         </td>
     </tr>
-}
-
+        }
+    </tbody>
 </table>

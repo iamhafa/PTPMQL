@@ -172,9 +172,6 @@ C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Add_Column_Account_
 C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Add_Column_NhanVien.resources
 C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Create_Table_QuanLiHangGui.resources
 C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Alter_Column_Table_QuanLiHangGui.resources
-C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Create_Table_Person.resources
-C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Create_Table_Student.resources
-C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Create_Table_NhanVien.resources
 C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Create_Table_CheckAccount.resources
 C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Alter_Table_CheckAccount.resources
 C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.csproj.GenerateResource.cache
@@ -182,4 +179,11 @@ C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.csproj.CoreCompileInputs.cache
 C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.csproj.CopyComplete
 C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.dll
 C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.pdb
-C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Alter_Table_CheckAccount1.resources
+C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Save_Data.resources
+C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Create_Table_Passenger.resources
+C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.csprojAssemblyReference.cache
+C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Alter_Table_Passenger.resources
+C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Create_Table_Meeting.resources
+C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Alter_Table_Meeting.resources
+C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Add_Column_Meeting.resources
+C:\Bai Tap ASP.net\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Alter_Table_QuanLiChuyenBay.resources

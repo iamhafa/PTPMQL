@@ -5,15 +5,20 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Create</h2>
+            <img src="~/Images/logo_vna.png" class="" style="width:20%" />
+
+    <div class="w3-container w3-center">
+        <h2 class="w3-text-cyan w3-sans-serif">Thêm mới thông tin hàng gửi</h2>
+        <h3 class="w3-opacity w3-text-orange w3-cursive">Hãng hàng không Vietnam AirLines</h3>
+    </div>
 
 
-@using (Html.BeginForm()) 
+@using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
-        <h4>QuanLiHangGui</h4>
+        
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
@@ -50,7 +55,7 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input type="submit" value="Upload" <button class="w3-btn w3-white w3-border w3-border-blue w3-round"></button>
             </div>
         </div>
     </div>

@@ -46,7 +46,7 @@ namespace PTPMQL.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "MaChuyenBay,DiemKhoiHanh,DiemDen,ThoiGianBay,ChoNgoi,Address")] QuanLiChuyenBay quanLiChuyenBay)
+        public ActionResult Create([Bind(Include = "MaChuyenBay,SoHanhKhach,DiemKhoiHanh,DiemDen,ThoiGianXuatPhat")] QuanLiChuyenBay quanLiChuyenBay)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace PTPMQL.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "MaChuyenBay,DiemKhoiHanh,DiemDen,ThoiGianBay,ChoNgoi,Address")] QuanLiChuyenBay quanLiChuyenBay)
+        public ActionResult Edit([Bind(Include = "MaChuyenBay,SoHanhKhach,DiemKhoiHanh,DiemDen,ThoiGianXuatPhat")] QuanLiChuyenBay quanLiChuyenBay)
         {
             if (ModelState.IsValid)
             {

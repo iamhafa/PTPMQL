@@ -9,10 +9,9 @@ namespace PTPMQL.Models
     {
         [Key]
         public string MaChuyenBay { get; set; }
+        public string SoHanhKhach { get; set; }
         public string DiemKhoiHanh { get; set; }
         public string DiemDen { get; set; }
-        public int ThoiGianBay { get; set; }
-        public int ChoNgoi { get; set; }
-        public string Address { get; set; }
+        public string ThoiGianXuatPhat { get; set; }
     }
 }
