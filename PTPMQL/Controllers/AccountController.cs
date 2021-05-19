@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
 using PTPMQL.Models;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace PTPMQL.Controllers
 {
@@ -12,7 +15,20 @@ namespace PTPMQL.Controllers
     {
         Encrytion encry = new Encrytion();
         DemoDbConText db = new DemoDbConText();
-        // GET: Account
+        
+        [HttpGet]
+        public ActionResult Create()
+        {
+            return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [ValidateGoogleCaptcha]
+        public ActionResult Create(string title)
+        {
+            // If we are here, Captcha is validated.  
+            return View();
+        }
         [HttpGet]
         public ActionResult Register()
         {
@@ -68,5 +84,6 @@ namespace PTPMQL.Controllers
             FormsAuthentication.SignOut();
             return RedirectToAction("Index", "Home");
         }
+        
     }
 }

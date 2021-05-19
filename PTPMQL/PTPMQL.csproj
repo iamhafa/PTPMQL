@@ -215,10 +215,14 @@
     <Compile Include="Models\CheckAccount.cs" />
     <Compile Include="Models\DemoDbConText.cs" />
     <Compile Include="Models\Encrytion.cs" />
+    <Compile Include="Models\GoogleCaptchaHelper.cs" />
+    <Compile Include="Models\InvalidGoogleCaptchaHelper.cs" />
     <Compile Include="Models\Meeting.cs" />
     <Compile Include="Models\Passenger.cs" />
     <Compile Include="Models\QuanLiChuyenBay.cs" />
     <Compile Include="Models\QuanLiHangGui.cs" />
+    <Compile Include="Models\SiteSettings.cs" />
+    <Compile Include="Models\ValidateGoogleCaptchaAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
