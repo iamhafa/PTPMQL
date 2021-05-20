@@ -16,19 +16,23 @@ namespace PTPMQL.Controllers
         Encrytion encry = new Encrytion();
         DemoDbConText db = new DemoDbConText();
         
+
+        //CAPTCHA bảo mật cao
         [HttpGet]
-        public ActionResult Create()
+        public ActionResult reCaptcha()
         {
             return View();
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
         [ValidateGoogleCaptcha]
-        public ActionResult Create(string title)
+        public ActionResult reCaptcha(string title)
         {
             // If we are here, Captcha is validated.  
             return View();
         }
+
+
         [HttpGet]
         public ActionResult Register()
         {

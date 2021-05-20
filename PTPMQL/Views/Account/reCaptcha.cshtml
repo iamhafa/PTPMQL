@@ -1,0 +1,34 @@
+﻿@using PTPMQL.Models
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>@ViewBag.Title</h2>
+<h4>Some test form that needs reCAPTCHA !</h4>
+
+<hr />
+
+@using (Html.BeginForm("reCaptcha", "Account", FormMethod.Post, new { @class = "form-horizontal" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        @Html.Label("Title", new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBox("Title", "", new { @class = "form-control" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            @Html.GoogleCaptcha()
+            @Html.InvalidGoogleCaptchaLabel("Mày đã nhấn nút phía trên đâu !")
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="I'm robot" class="btn btn-primary" />
+        </div>
+    </div>
+}
