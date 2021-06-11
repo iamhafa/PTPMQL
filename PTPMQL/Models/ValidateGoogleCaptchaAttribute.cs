@@ -60,6 +60,9 @@ namespace PTPMQL.Models
         [JsonProperty("success")]
         public bool Success { get; set; }
 
+        [JsonProperty("fail")]
+        public bool fail { get; set; }
+
         [JsonProperty("challenge_ts")]
         public string ValidatedDateTime { get; set; }
 

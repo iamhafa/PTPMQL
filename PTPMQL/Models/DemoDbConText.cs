@@ -17,6 +17,7 @@ namespace PTPMQL.Models
         public virtual DbSet<Passenger> Passengers { get; set; }
         public virtual DbSet<CheckAccount> CheckAccounts { get; set; }
         public virtual DbSet<Meeting> Meetings { get; set; }
+        public virtual DbSet<KhachHang> KhachHangs { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

@@ -13,7 +13,7 @@ namespace PTPMQL.Controllers
 {
     public class AccountController : Controller
     {
-        Encrytion encry = new Encrytion();
+        Encryption encry = new Encryption();
         DemoDbConText db = new DemoDbConText();
         
 
@@ -32,7 +32,7 @@ namespace PTPMQL.Controllers
             return View();
         }
 
-
+         
         [HttpGet]
         public ActionResult Register()
         {
@@ -47,7 +47,7 @@ namespace PTPMQL.Controllers
             if (ModelState.IsValid)
             {
                 //mã hóa mật khẩu trước khi lưu vào database
-                acc.Password = encry.PasswordEncrytion(acc.Password);
+                acc.Password = encry.PasswordEncryption(acc.Password);
                 db.Accounts.Add(acc);
                 db.SaveChanges();
                 return RedirectToAction("Login", "Account");
@@ -68,8 +68,8 @@ namespace PTPMQL.Controllers
         {
             if (ModelState.IsValid)
             {
-                string encrytionpass = encry.PasswordEncrytion(acc.Password);
-                var model = db.Accounts.Where(m => m.UserName == acc.UserName && m.Password == encrytionpass).ToList().Count();
+                string encryptionpass = encry.PasswordEncryption(acc.Password);
+                var model = db.Accounts.Where(m => m.UserName == acc.UserName && m.Password == encryptionpass).ToList().Count();
                 //Thông tin đăng nhập chính xác
                 if (model == 1)
                 {

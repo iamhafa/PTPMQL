@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace PTPMQL.Models
 {
-    public partial class Account
+    public class Account
     {
         [Key]
         [Required(ErrorMessage = "Tên tài khoản không được để trống")]

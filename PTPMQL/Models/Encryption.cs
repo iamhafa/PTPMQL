@@ -6,9 +6,9 @@ using System.Web.Security;
 
 namespace PTPMQL.Models
 {
-    public class Encrytion
+    public class Encryption
     {
-        public string PasswordEncrytion(string pass)
+        public string PasswordEncryption(string pass)
         {
             return FormsAuthentication.HashPasswordForStoringInConfigFile(pass.Trim(), "MD5");
         }

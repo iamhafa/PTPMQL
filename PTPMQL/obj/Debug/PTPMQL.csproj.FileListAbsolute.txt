@@ -289,3 +289,4 @@ C:\Users\asus\Source\Repos\PTPMQL\PTPMQL\obj\Debug\PTPMQL.csproj.CoreCompileInpu
 C:\Users\asus\Source\Repos\PTPMQL\PTPMQL\obj\Debug\PTPMQL.csproj.CopyComplete
 C:\Users\asus\Source\Repos\PTPMQL\PTPMQL\obj\Debug\PTPMQL.dll
 C:\Users\asus\Source\Repos\PTPMQL\PTPMQL\obj\Debug\PTPMQL.pdb
+C:\Users\asus\source\repos\PTPMQL\PTPMQL\obj\Debug\PTPMQL.Migrations.Create_Table_KhachHang1.resources

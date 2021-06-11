@@ -131,6 +131,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CheckAccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\KhachHangsController.cs" />
     <Compile Include="Controllers\MeetingsController.cs" />
     <Compile Include="Controllers\PassengersController.cs" />
     <Compile Include="Controllers\QuanLiChuyenBaysController.cs" />
@@ -210,13 +211,19 @@
     <Compile Include="Migrations\202105110300482_Create_Table_Account1.Designer.cs">
       <DependentUpon>202105110300482_Create_Table_Account1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202106110602095_Create_Table_KhachHang1.cs" />
+    <Compile Include="Migrations\202106110602095_Create_Table_KhachHang1.Designer.cs">
+      <DependentUpon>202106110602095_Create_Table_KhachHang1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\CheckAccount.cs" />
     <Compile Include="Models\DemoDbConText.cs" />
-    <Compile Include="Models\Encrytion.cs" />
+    <Compile Include="Models\Encryption.cs" />
+    <Compile Include="Models\ExcelProcess\ReadExcel.cs" />
     <Compile Include="Models\GoogleCaptchaHelper.cs" />
     <Compile Include="Models\InvalidGoogleCaptchaHelper.cs" />
+    <Compile Include="Models\KhachHang.cs" />
     <Compile Include="Models\Meeting.cs" />
     <Compile Include="Models\Passenger.cs" />
     <Compile Include="Models\QuanLiChuyenBay.cs" />
@@ -639,9 +646,15 @@
     <Content Include="Views\Meetings\Edit.cshtml" />
     <Content Include="Views\Meetings\Index.cshtml" />
     <Content Include="Views\Account\reCaptcha.cshtml" />
+    <Content Include="Views\KhachHangs\Create.cshtml" />
+    <Content Include="Views\KhachHangs\Delete.cshtml" />
+    <Content Include="Views\KhachHangs\Details.cshtml" />
+    <Content Include="Views\KhachHangs\Edit.cshtml" />
+    <Content Include="Views\KhachHangs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Uploads\Excels\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -710,6 +723,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202105110300482_Create_Table_Account1.resx">
       <DependentUpon>202105110300482_Create_Table_Account1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106110602095_Create_Table_KhachHang1.resx">
+      <DependentUpon>202106110602095_Create_Table_KhachHang1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
